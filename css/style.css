@@ -71,7 +71,6 @@ p {
     border-radius: 50px;
     font-family: 'Bai Jamjuree', sans-serif;
     transition: all 1s ease-in-out;
-
     box-shadow: 2px 2px 3px var(--Light-Blue);
 }
 
@@ -102,7 +101,6 @@ p {
 .break {
     width: 100%;
     height: 20vh;
-    /* background-color: var(--Light-Blue); */
 }
 
 .more-notes {
@@ -128,6 +126,7 @@ p {
 }
 
 .access {
+    /* width: 100vw; */
     margin: 150px;
     text-align: center;
     display: flex;
@@ -137,8 +136,10 @@ p {
 }
 
 .access-note {
-    margin: 40px;
+    margin: 40px 0;
+
 }
+
 
 .access-note h1,
 .access-note p {
@@ -196,7 +197,6 @@ p {
 
 .element-one{
     display:flex;
-    
     flex-direction: column;
 }
 
@@ -223,4 +223,32 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+}
+
+
+@media (max-width:800px){
+    .social-media ,
+    .buttons ,
+    .search ,
+    .create{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .socila-media-img{
+        margin-top: 40px;
+    }
+
+    .btn{
+        margin: 10px 0;
+    }
+    .me{
+        width: 600px;
+        text-align: center;
+    }
+    .search-notes{
+        /* justify-content: space-between; */
+        margin: 10px 0;
+    }
 }
